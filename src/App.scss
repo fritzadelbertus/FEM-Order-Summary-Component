@@ -1,0 +1,18 @@
+.App {
+  background-color: hsl(225, 100%, 94%);;
+  min-width: 100vw;
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+picture {
+  position: absolute;
+  top:-15vh;
+  z-index: 0;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}

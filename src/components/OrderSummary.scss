@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+@mixin blackboldfont {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.OrderSummaryComponent {
+  @include flexColumn();
+  width: 90vw;
+  max-width: 400px;
+  border-radius: 20px;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 98%);
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  article {
+    @include flexColumn();
+    gap: 20px;
+    padding: 30px;
+    h1 {
+      @include blackboldfont()
+    }
+    p {
+      color: hsl(224, 23%, 55%);
+    }
+    .PriceCard {
+      background-color: hsla(225, 100%, 94%, 0.5);
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 10px;
+      padding: 20px;
+      border-radius: 15px;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div .subtitle {
+          @include blackboldfont()
+        }
+        a {
+          color: hsl(245, 75%, 52%);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    button {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      color: hsl(225, 100%, 94%);
+      background-color: hsl(245, 75%, 52%);
+      box-shadow: 0 5px 5px 5px hsla(224, 23%, 55%, 0.25);
+      &:hover {
+        cursor: pointer;
+        background-color: hsla(245, 75%, 52%, 0.75);
+      }
+    }
+    
+    & > a {
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+      &:hover {
+        color: hsl(223, 47%, 23%);
+      }
+    }
+    button, a {
+      font-weight: 700;
+    }
+  }
+}
