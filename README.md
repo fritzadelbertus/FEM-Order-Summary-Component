@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/fritzadelbertus/FEM-Order-Summary-Component)
-- Live Site URL: [Github Pages](https://fritzadelbertus.github.io/FEM-Order-Summary-Component/)
+- Solution URL: [Github Repo](https://github.com/fritzadelbertus/FEM_Order-Summary-Component)
+- Live Site URL: [Github Pages](https://fritzadelbertus.github.io/FEM_Order-Summary-Component/)
 
 ## My process
 
